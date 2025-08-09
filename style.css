@@ -11,16 +11,27 @@
 body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #02142b;
+    background-color: #111111;
 }
 
 nav {
     display: flex;
     height: 80px;
+    margin: 0 12px 0 12px;
 }
 
 a {
     text-decoration: none;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+.gold {
+    color: #ffa115;
 }
 
 /* Navbar */
@@ -39,10 +50,68 @@ a {
 }
 
 .nav__links {
-    display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    max-width: 630px;
 }
+
 .nav__link {
     padding-left: 24px;
 }
 
+/* Home */
+
+.home__container {
+    max-width: 1200px;
+    margin: 64px 8px 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__title {
+    max-width: 800px;
+    font-size: 64px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.home__subtitle {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 48px;
+}
+
+.input__wrapper {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+input {
+    height: 48px;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 16px;
+    border-width: 1px;
+    padding: 16px;
+}
+
+.input__button {
+    background-color: #ffa115;
+    font-size: 24px;
+    width: 80px;
+    height: 48px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px #e6dfdf;
+    margin-left: 24px
+}
+
+
+
+.home__img {
+    width: 960px;
+    box-shadow: 0 0 16px #ffa115;
+}
