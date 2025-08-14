@@ -28,6 +28,8 @@ a {
 
 img {
     width: 100%;
+    box-shadow: 0 0 16px 0 #ffa115;
+    border-radius: 20px;
 }
 
 .gold {
@@ -96,6 +98,7 @@ input {
     border-radius: 16px;
     border-width: 1px;
     padding: 16px;
+    
 }
 
 .input__button {
@@ -113,5 +116,4 @@ input {
 
 .home__img {
     width: 960px;
-    box-shadow: 0 0 16px #ffa115;
 }
