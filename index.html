@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/f58c63e40d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Movie Database</title>
@@ -23,14 +22,14 @@
             </div>
         </nav>
     </section>
-    <section id="Home">
+    <section id="home">
         <div class="home__container">
             <h1 class="home__title">Welcome to the internet's <span class="gold">premier</span> movie catalog</h1>
             <h2 class="home__subtitle">
                 Your next watch is here
             </h2>
             <div class="input__wrapper">
-                <input type="text" placeholder="Search by Title or Keyword">
+                <input type="text" placeholder="Search by Title or Keyword" id="movieTitle">
                 <button class="input__button">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
@@ -40,5 +39,6 @@
             </div>
         </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>

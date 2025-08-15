@@ -16,6 +16,7 @@ body {
 
 nav {
     display: flex;
+    justify-content: center;
     height: 80px;
     margin: 0 12px 0 12px;
 }
@@ -27,8 +28,7 @@ a {
 
 
 img {
-    width: 100%;
-    box-shadow: 0 0 16px 0 #ffa115;
+    box-shadow: 0 0 16px 0 #fff;
     border-radius: 20px;
 }
 
@@ -40,7 +40,7 @@ img {
 
 .navbar__container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,4 +58,27 @@ img {
 
 .nav__link {
     padding-left: 24px;
+}
+
+/* Movies */
+
+.movies__list {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    align-items: center;
+    width: auto;
+
+}
+
+.title {
+    
 }

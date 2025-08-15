@@ -16,6 +16,7 @@ body {
 
 nav {
     display: flex;
+    justify-content: center;
     height: 80px;
     margin: 0 12px 0 12px;
 }
@@ -40,7 +41,7 @@ img {
 
 .navbar__container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +62,11 @@ img {
 }
 
 /* Home */
+
+#home {
+    display: flex;
+    justify-content: center;
+}
 
 .home__container {
     max-width: 1200px;
