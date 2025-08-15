@@ -28,6 +28,7 @@ a {
 
 
 img {
+    width: 100%;
     box-shadow: 0 0 16px 0 #fff;
     border-radius: 20px;
 }
@@ -74,11 +75,18 @@ img {
 }
 
 .movie {
-    align-items: center;
-    width: auto;
+    padding: 16px;
+    width: calc(25%);
+}
 
+.movie:hover {
+    transform: translateY(-5%)
 }
 
 .title {
-    
+    text-align: center;
+}
+
+.year {
+    text-align: center;
 }
