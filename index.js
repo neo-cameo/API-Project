@@ -1,11 +1,14 @@
-// const movieTitle = document.getElementById('movieTitle')
+// function searchQueary() {
+// const movieTitle = document.getElementById('movieTitle');
 // movieTitle.addEventListener('keyup', e => {
 //     let currentValue = e.target.value.toLowerCase()
 //     console.log(currentValue)
 // })
+// }
 
 async function movieSearch() {
-  const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=50a9856f&s=soldier`);
+    const title = document.getElementById('movieTitle').value
+  const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=50a9856f&s=${title}`);
   const moviesData = await movies.json();
     movieListEl = document.querySelector(".movie__container")
     console.log(moviesData.Search)

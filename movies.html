@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/f58c63e40d.js"
       crossorigin="anonymous"
@@ -27,20 +26,27 @@
       </nav>
     </section>
     <section id="movies">
+        <div class="search__bar">
+         <input type="text" placeholder="Search by Title or Keyword" id="movieTitle">
+         <button onclick="movieSearch()" class="input__button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </button>
+        </div>
       <div class="movies__list">
         <div class="movie__container">
           <div class="movie">
             <figure class="poster">
               <img
-                src="assets/placeholder_picture.jpg"
-                alt="assets/noimg.jpg"
+                src=""
+                alt=""
               />
             </figure>
-            <div class="title">xxxxxx</div>
-            <div class="year">xxxx</div>
+            <div class="title">Click the search button to find your next watch!</div>
+            <div class="year"></div>
           </div>
         </div>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

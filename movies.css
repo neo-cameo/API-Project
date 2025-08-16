@@ -33,6 +33,10 @@ img {
     border-radius: 20px;
 }
 
+img:hover {
+    box-shadow: 0 0 16px 0 #ffa115;
+}
+
 .gold {
     color: #ffa115;
 }
@@ -63,6 +67,43 @@ img {
 
 /* Movies */
 
+.search__bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 64px;
+    align-items: center;
+}
+
+input {
+    height: 48px;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 16px;
+    border-width: 1px;
+    padding: 16px;
+    color: #111111;
+}
+
+.input__button {
+    background-color: #ffa115;
+    font-size: 24px;
+    width: 80px;
+    height: 48px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px #e6dfdf;
+    margin-left: 24px;
+    transition: all 500ms smooth;
+}
+
+.input__button:hover {
+    background-color: #e7770e;
+    cursor: pointer;
+}
+
 .movies__list {
     width: 100%;
     max-width: 1200px;
@@ -72,11 +113,17 @@ img {
 .movie__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 128px;
 }
 
 .movie {
     padding: 16px;
-    width: calc(25%);
+    width: calc(50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .movie:hover {
@@ -84,9 +131,12 @@ img {
 }
 
 .title {
+    font-size: 20px;
+    padding-top: 8px;
     text-align: center;
 }
 
 .year {
+    font-size: 20px;
     text-align: center;
 }

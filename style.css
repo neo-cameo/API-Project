@@ -118,8 +118,12 @@ input {
     margin-left: 24px
 }
 
-
+.input__button:hover {
+    background-color: #e7770e;
+    cursor: pointer;
+}
 
 .home__img {
-    width: 960px;
+    max-width: 960px;
+    padding: 16px;
 }
