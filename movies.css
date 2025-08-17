@@ -25,7 +25,10 @@ a {
     text-decoration: none;
 }
 
-
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 img {
     width: 100%;
@@ -130,6 +133,10 @@ input {
     transform: translateY(-5%)
 }
 
+figure {
+    width: 55%;
+}
+
 .title {
     font-size: 20px;
     padding-top: 8px;
@@ -139,4 +146,38 @@ input {
 .year {
     font-size: 20px;
     text-align: center;
+}
+
+/* Load State */
+
+.movies__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 60px;
+  color: #7342d6;
+  z-index: 100;
+}
+
+.movies__loading--spinner {
+display: none !important;
+}
+
+.movies__loading .movies__loading--spinner {
+display: block !important;
+}
+
+.fa-spinner {
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
