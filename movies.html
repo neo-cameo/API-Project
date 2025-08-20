@@ -19,36 +19,42 @@
           </div>
           <div class="nav__links">
             <a href="index.html" class="nav__link">Home</a>
-            <a href="" class="gold nav__link">Find a movie</a>
-            <!-- <button class="genre__list" onclick="event">Genre</button> -->
+            <a href="" class="gold nav__link">Find a Movie or Show</a>
           </div>
         </div>
       </nav>
     </section>
     <section id="movies">
         <div class="search__bar">
-         <input type="text" placeholder="Search by Title or Keyword" id="movieTitle">
-         <button onclick="movieSearch()" class="input__button">
+         <input type="text" placeholder="Search by Title" id="movieTitle">
+         <button onclick="movieSearch()" class="input__button" id="searchBtn">
             <i class="fa-solid fa-magnifying-glass"></i>
          </button>
         </div>
+        <div class="filter__container">
+            <button class="filter__button active" data-type="">All</button>
+            <button class="filter__button" data-type="movie">Movies</button>
+            <button class="filter__button" data-type="series">Series</button>
+        </div>
       <div class="movies__list">
-        <!-- <div class="movies__list movies__loading">
-            <i class="fas fa-spinner movies__loading--spinner"></i>
-          </div> -->
         <div class="movie__container">
           <div class="movie">
             <figure class="poster">
               <img
-                src=""
+                src="assets/pexels-cottonbro-4009409.jpg"
                 alt=""
               />
             </figure>
             <div class="title">Click the search button to find your next movie or tv show!</div>
             <div class="year"></div>
           </div>
+          <!-- <div class="skeleton__movie">
+                    <div class="skeleton skeleton__poster"></div>
+                    <div class="skeleton skeleton__title"></div>
+                    <div class="skeleton skeleton__year"></div>
+                </div> -->
         </div>
-        
+
       </div>
     </section>
     <script src="index.js"></script>
